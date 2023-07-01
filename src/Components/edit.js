@@ -8,7 +8,7 @@ const Edit = () => {
     const navigate = useNavigate();
 
     const getEditData = () =>{
-        fetch("https://mock-76x7.onrender.com/data/"+id)
+        fetch("https://mock-bt08.onrender.com/data/"+id)
         .then(Response=>Response.json())
         .then(data=>{
             console.log(data);
@@ -21,7 +21,7 @@ const Edit = () => {
     },[1]);
 
     const updateData = () =>{
-        let url = "https://mock-76x7.onrender.com/data/"+id;
+        let url = "https://mock-bt08.onrender.com/data/"+id;
         let data = {title:name};
         let postoption = {
             headers:{'Content-Type':'application/json'},

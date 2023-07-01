@@ -7,7 +7,7 @@ const Check = () => {
     const[name, setName] = useState([]);
 
     const post = () =>{
-        let url = "https://mock-76x7.onrender.com/data";
+        let url = "https://mock-bt08.onrender.com/data";
         let data = {title:title};
         let postoption = {
             headers:{'Content-Type':'application/json'},
@@ -25,7 +25,7 @@ const Check = () => {
     };
 
     const getData = ()=>{
-        fetch("https://mock-76x7.onrender.com/data")
+        fetch("https://mock-bt08.onrender.com/data")
         .then(Response=>Response.json())
         .then(serRes=>{
             console.log(serRes);
@@ -38,7 +38,7 @@ const Check = () => {
     },[1]);
 
     const delData = (tnameid) =>{
-        let url = "https://mock-76x7.onrender.com/data/"+tnameid;
+        let url = "https://mock-bt08.onrender.com/data/"+tnameid;
         let postoption = {
             headers:{'Content-Type':'application/json'},
             method:"DELETE"
